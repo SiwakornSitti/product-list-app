@@ -1,9 +1,15 @@
+// ผมรู้สึกแปลกเวลาเห็น api/api ไม่ใช่เป็น api/products
 import { getProducts, getProduct, updateProductData } from '../api/api'
+
+// ปกติ STATE ใน REDUX มันน่าจะเป็น REQUEST, SUCCESS, FAILURE
+// มันมีประโยชน์ในการทำ Loading data
 
 export const FETCH_PRODUCTS_SUCCESS = 'FETCH_PRODUCTS_SUCCESS'
 export const FETCH_PRODUCTS_FAILURE = 'FETCH_PRODUCTS_FAILURE'
+// เว้นวรรค จะอ่านง่ายขึ้น
 export const FETCH_PRODUCT_SUCCESS = 'FETCH_PRODUCT_SUCCESS'
 export const FETCH_PRODUCT_FAILURE = 'FETCH_PRODUCT_FAILURE'
+
 export const UPDATE_PRODUCT_SUCCESS = 'UPDATE_PRODUCT_SUCCESS'
 export const UPDATE_PRODUCT_FAILURE = 'UPDATE_PRODUCT_FAILURE'
 
