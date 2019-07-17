@@ -1,3 +1,4 @@
+// Import มาแต่ไม่ได้ใช้ 
 import { shallow } from 'enzyme'
 import React from 'react'
 import renderer from 'react-test-renderer'
@@ -27,11 +28,15 @@ const mockProducts = [
 ]
 
 describe('With Snapshot Testing', () => {
+    // ควรมีเทสการ Render แต่ไม่พบข้อมูลด้วย 
+    // อยากให้เขียนเทสที่ไม่ใช้แค่ Snapshot มันเหมือนไว้แค่ Detect change อย่างเดียว  
+ 
     it('Render ProductItem', () => {
         const component = renderer.create(<ProductList products={mockProducts} />)
         const tree = component.toJSON()
         expect(tree).toMatchSnapshot()
     })
+    
     it('Render ProductDetail', () => {
         let product  = mockProducts[1]
         const component = renderer.create(<ProductDetail product={product}/>)
