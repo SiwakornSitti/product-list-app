@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import ProductList from '../components/product-list'
 import { fetchProducts } from '../actions';
 
+// ใช้ Functionall Component แทน
 class Index extends Component {
     componentDidMount () {
         this.props.fetchProducts()
