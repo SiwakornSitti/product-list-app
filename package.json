@@ -18,6 +18,7 @@
     "react-redux": "^5.0.1",
     "redux": "^3.6.0",
     "redux-thunk": "^2.3.0",
+    // อันนี้ควรเป็น DevDependencies รึเปล่า
     "redux-devtools-extension": "^2.13.2",
     "styled-components": "^4.3.2"
   },
