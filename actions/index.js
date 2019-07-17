@@ -1,3 +1,4 @@
+// ควรตั้งชื่อ File ให้มันสื่อถึงสิ่งที่เราจะทำ
 // ผมรู้สึกแปลกเวลาเห็น api/api ไม่ใช่เป็น api/products
 import { getProducts, getProduct, updateProductData } from '../api/api'
 
