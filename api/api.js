@@ -10,7 +10,12 @@ const api = axios.create({
 
 export const getProducts = () => {
    return api.get('/product/')
-} 
+}
+
+// อาจจะเขียนเป็นแบบนี้
+// export const getProduct = (id) = api.get(`/product/${id}`
+// แต่บางคนเขาบอกว่าแบบพี่มันอ่านแล้วง่ายกว่า
+
 export const getProduct = (id) => {
    return api.get('/product/'+id)
 } 
