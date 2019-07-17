@@ -8,6 +8,7 @@ import ProductDetail from '../components/product-detail'
 import EditProductForm from '../components/product-edit'
 import { Button } from '../styled-css/product'
 
+// แยก Style ออกไปผมว่ามันน่าจะเป็น Global เพื่อแชร์นะทุกอันน่าจะต้องจัดกลาง
 const modalStyles = {
     content : {
       top                   : '50%',
