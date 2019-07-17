@@ -8,6 +8,7 @@ return (
         <h1>Edit product: {product.id}</h1>
         <Formik
             initialValues={product}
+            // แยกออกมาเป็น Function ผมว่ามันอ่านมองเห็นส่วน Render ง่ายกว่า มันจะได้ดูว่าเรา Focus การแสดงผลมากกว่า Logic ในนี้มันปนกัน
             validate={values => {
                 let errors = {}
                 if (!values.name) {
@@ -43,6 +44,7 @@ return (
                         <FieldArray name="images" render={arrayHelpers => (
                             <div>
                                 {
+                                    // ใช้ Index แทน Key ไม่ดี
                                     values.images.map((image, i) => (
                                         <ImgEditItem key={i}>
                                             <ProductImg src={image.url} />
@@ -55,6 +57,7 @@ return (
                                 <ImgAddItem>
                                     <Label>Add image</Label>
                                     {/* might use dropzone later */}
+                                    {/* ใช้ Index แทน Key ไม่ดี แยกออกมาเป็น Function ดีกว่า */}
                                     <input id="file" name="file" type="file" onChange={(e) => {
                                         const url = e.currentTarget.files[0].name //FIX: some url to define
                                         const name = e.currentTarget.files[0].name
