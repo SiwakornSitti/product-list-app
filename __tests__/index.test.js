@@ -1,4 +1,7 @@
-// Import มาแต่ไม่ได้ใช้ 
+// Import มาแต่ไม่ได้ใช้ ใส่ ESLint เข้าไปในโปรเจ็คจะช่วยแก้ปัญหานี้
+// มันทำให้เราดูใส่ใจกับ Quality มากขึ้นเยอะ 
+// หรืออาจจะใส่ StyleLint เข้าไปด้วย
+
 import { shallow } from 'enzyme'
 import React from 'react'
 import renderer from 'react-test-renderer'
