@@ -29,5 +29,6 @@ Please follow instruction in [here](https://learning.getpostman.com/docs/postman
 
 
 #Note
-1. No serverside rendering
+1. No serverside rendering 
+// ผมไม่ชัวร์นะ แต่มันน่าจะเป็น Server Side Rendering แล้วนะ แต่อะไรที่เป็นหน้า Detail จะต้องใช้ พวก Node ช่วย
 2. add more tests
