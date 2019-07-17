@@ -39,6 +39,7 @@ class Product extends React.Component {
                     onRequestClose={this.props.closeModal}
                     style={modalStyles}
                     contentLabel="Edit Product Modal">
+                                                           {/* Prop ควรเป็น onUpdateProduct รึเปล่า */}
                         <EditProductForm product={product} updateProduct={this.props.updateProduct} onClose={this.props.closeModal}></EditProductForm>
                 </Modal>
             </Layout>
