@@ -1,3 +1,5 @@
+// ผมว่าอันนี้มันควรจะนับเป็น Components เลยนะ
+
 import styled from 'styled-components'
 
 export const Label = styled.label`
