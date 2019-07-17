@@ -3,6 +3,7 @@ import { getProducts, getProduct, updateProductData } from '../api/api'
 
 // ปกติ STATE ใน REDUX มันน่าจะเป็น REQUEST, SUCCESS, FAILURE
 // มันมีประโยชน์ในการทำ Loading data
+// แยกไฟล์เถอะ
 
 export const FETCH_PRODUCTS_SUCCESS = 'FETCH_PRODUCTS_SUCCESS'
 export const FETCH_PRODUCTS_FAILURE = 'FETCH_PRODUCTS_FAILURE'
